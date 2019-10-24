@@ -1,38 +1,41 @@
-<%@ page language="java" contentType="text/html; charset=ISO-8859-1" pageEncoding="ISO-8859-1"%>
-<%@ page isELIgnored="false" %>
-<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
-<html>
-	<head>
-		<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-		<title>Tu Innovacion</title>
-		<link href="<c:url value='/static/css/bootstrap.css' />"  rel="stylesheet"></link>
-		<link href="<c:url value='/static/css/app.css' />" rel="stylesheet"></link>
-                <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.2.0/css/font-awesome.css" />
-                <link href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800&display=swap" rel="stylesheet">
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+  pageEncoding="ISO-8859-1"%>
+<%@taglib uri="http://www.springframework.org/tags/form" prefix="form"%>
+<%@taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 
-    <link rel="stylesheet" href="<c:url value='/static/css/open-iconic-bootstrap.min.css' />" media="screen">
-    <link rel="stylesheet" href="<c:url value='/static/css/animate.css' />" media="screen">
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <title>TuInnovacion</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     
-    <link rel="stylesheet" href="<c:url value='/static/css/owl.carousel.min.css' />" media="screen">
-    <link rel="stylesheet" href="<c:url value='/static/css/owl.theme.default.min.css' />" media="screen">
-    <link rel="stylesheet" href="<c:url value='/static/css/magnific-popup.css' />" media="screen">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="<c:url value='/static/css/aos.css' />" media="screen">
+    <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css" media="screen">
+    <link rel="stylesheet" href="css/animate.css" media="screen">
+    
+    <link rel="stylesheet" href="css/owl.carousel.min.css" media="screen">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css" media="screen">
+    <link rel="stylesheet" href="css/magnific-popup.css" media="screen">
 
-    <link rel="stylesheet" href="<c:url value='/static/css/ionicons.min.css' />" media="screen">
+    <link rel="stylesheet" href="css/aos.css" media="screen">
 
-    <link rel="stylesheet" href="<c:url value='/static/css/bootstrap-datepicker.css' />" media="screen">
-    <link rel="stylesheet" href="<c:url value='/static/css/jquery.timepicker.css' />" media="screen">
+    <link rel="stylesheet" href="css/ionicons.min.css" media="screen">
+
+    <link rel="stylesheet" href="css/bootstrap-datepicker.css" media="screen">
+    <link rel="stylesheet" href="css/jquery.timepicker.css" media="screen">
 
     
-    <link rel="stylesheet" href="<c:url value='/static/css/flaticon.css' />" media="screen">
-    <link rel="stylesheet" href="<c:url value='/static/css/icomoon.css' />" media="screen">
-    <link rel="stylesheet" href="<c:url value='/static/css/style.css' />" media="screen">
-        </head>
-
-	<nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
+    <link rel="stylesheet" href="css/flaticon.css" media="screen">
+    <link rel="stylesheet" href="css/icomoon.css" media="screen">
+    <link rel="stylesheet" href="css/style.css" media="screen">
+  </head>
+  <body>
+    
+    <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
       <div class="container">
-        <a class="navbar-brand" href="index.html">Tu<span>Innovación</span></a>
+        <a class="navbar-brand" href="index.html">Tu<span>InnovaciÃ³n</span></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="oi oi-menu"></span> Menu
         </button>
@@ -49,13 +52,13 @@
     </nav>
     <!-- END nav -->
  
-    <div class="hero-wrap" style="background-image: url('<c:url value='/static/images/bg_1.jpg' />');" data-stellar-background-ratio="0.5">
+    <div class="hero-wrap" style="background-image: url('images/bg_1.jpg');" data-stellar-background-ratio="0.5">
       <div class="overlay"></div>
       <div class="container">
         <div class="row no-gutters slider-text justify-content-start align-items-center">
           <div class="col-lg-6 col-md-6 ftco-animate d-flex align-items-end">
             <div class="text">
-              <h1 class="mb-4">Terrenos <span>Para generar energia limpia</span> <span>¡Empieza ya!</span></h1>
+              <h1 class="mb-4">Terrenos <span>Para generar energia limpia</span> <span>Â¡Empieza ya!</span></h1>
               <p style="font-size: 18px;">Tu innovacion es un proyecto para aquellas personas que quieren ayudar al mundo y a su vez no estan beneficiadas con la electricidad</p>
             </div>
           </div>
@@ -97,7 +100,7 @@
         </div>
       </div>
     </div>
- <section class="hero-wrap hero-wrap-2 js-fullheight" style="background-image: url('<c:url value='/static/images/bg_2.jpg' />');" data-stellar-background-ratio="0.5">
+ <section class="hero-wrap hero-wrap-2 js-fullheight" style="background-image: url('images/bg_2.jpg');" data-stellar-background-ratio="0.5">
       <div class="overlay"></div>
       <div class="container">
         <div class="row no-gutters slider-text js-fullheight align-items-end justify-content-start">
@@ -248,23 +251,23 @@
   <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
 
 
-  <script src="<c:url value='/static/js/jquery.min.js' />"></script>
-  <script src="<c:url value='/static/js/jquery-migrate-3.0.1.min.js' />"></script>
-  <script src="<c:url value='/static/js/popper.min.js' />"></script>
-  <script src="<c:url value='/static/js/bootstrap.min.js' />"></script>
-  <script src="<c:url value='/static/js/jquery.easing.1.3.js' />"></script>
-  <script src="<c:url value='/static/js/jquery.waypoints.min.js' />"></script>
-  <script src="<c:url value='/static/js/jquery.stellar.min.js' />"></script>
-  <script src="<c:url value='/static/js/owl.carousel.min.js' />"></script>
-  <script src="<c:url value='/static/js/jquery.magnific-popup.min.js' />"></script>
-  <script src="<c:url value='/static/js/aos.js' />"></script>
-  <script src="<c:url value='/static/js/jquery.animateNumber.min.js' />"></script>
-  <script src="<c:url value='/static/js/bootstrap-datepicker.js' />"></script>
-  <script src="<c:url value='/static/js/jquery.timepicker.min.js' />"></script>
-  <script src="<c:url value='/static/js/scrollax.min.js' />"></script>
+  <script src="js/jquery.min.js"></script>
+  <script src="js/jquery-migrate-3.0.1.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery.easing.1.3.js"></script>
+  <script src="js/jquery.waypoints.min.js"></script>
+  <script src="js/jquery.stellar.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
+  <script src="js/aos.js"></script>
+  <script src="js/jquery.animateNumber.min.js"></script>
+  <script src="js/bootstrap-datepicker.js"></script>
+  <script src="js/jquery.timepicker.min.js"></script>
+  <script src="js/scrollax.min.js"></script>
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
-  <script src="<c:url value='/static/js/google-map.js' />"></script>
-  <script src="<c:url value='/static/js/main.js' />"></script>
+  <script src="js/google-map.js"></script>
+  <script src="js/main.js"></script>
     
   </body>
 </html>
