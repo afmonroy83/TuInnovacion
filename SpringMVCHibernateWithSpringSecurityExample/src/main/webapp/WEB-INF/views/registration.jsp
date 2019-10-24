@@ -10,6 +10,24 @@
 	<title>User Registration Form</title>
 	<link href="<c:url value='/static/css/bootstrap.css' />" rel="stylesheet"></link>
 	<link href="<c:url value='/static/css/app.css' />" rel="stylesheet"></link>
+    <link rel="stylesheet" href="<c:url value='/static/css/open-iconic-bootstrap.min.css' />" media="screen">
+    <link rel="stylesheet" href="<c:url value='/static/css/animate.css' />" media="screen">
+    
+    <link rel="stylesheet" href="<c:url value='/static/css/owl.carousel.min.css' />" media="screen">
+    <link rel="stylesheet" href="<c:url value='/static/css/owl.theme.default.min.css' />" media="screen">
+    <link rel="stylesheet" href="<c:url value='/static/css/magnific-popup.css' />" media="screen">
+
+    <link rel="stylesheet" href="<c:url value='/static/css/aos.css' />" media="screen">
+
+    <link rel="stylesheet" href="<c:url value='/static/css/ionicons.min.css' />" media="screen">
+
+    <link rel="stylesheet" href="<c:url value='/static/css/bootstrap-datepicker.css' />" media="screen">
+    <link rel="stylesheet" href="<c:url value='/static/css/jquery.timepicker.css' />" media="screen">
+
+    
+    <link rel="stylesheet" href="<c:url value='/static/css/flaticon.css' />" media="screen">
+    <link rel="stylesheet" href="<c:url value='/static/css/icomoon.css' />" media="screen">
+    <link rel="stylesheet" href="<c:url value='/static/css/style.css' />" media="screen">
 </head>
 
 <body>
