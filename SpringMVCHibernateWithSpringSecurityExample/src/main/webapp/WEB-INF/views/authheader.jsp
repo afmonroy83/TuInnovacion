@@ -1,3 +1,3 @@
 <div class="authbar">
-    <span>Usuario <strong>${loggedinuser}</strong>, Bienvenido a Tu Innovacion</span> <span class="floatRight"><a href="<c:url value="/logout" />">Logout</a></span>
+    <span><spring:message code="app.usuario" /> <strong>${loggedinuser}</strong><spring:message code="app.welcome" /> </span> <span class="floatRight"><a href="<c:url value="/logout" />">Logout</a></span>
 </div>

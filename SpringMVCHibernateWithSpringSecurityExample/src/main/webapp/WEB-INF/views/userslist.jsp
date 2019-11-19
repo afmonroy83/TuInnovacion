@@ -2,7 +2,8 @@
 <%@ page isELIgnored="false" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ taglib prefix="sec" uri="http://www.springframework.org/security/tags"%>
-
+<%@ taglib uri="http://www.springframework.org/tags" prefix="spring"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <html>
 
     <head>
@@ -35,22 +36,25 @@
     <body>
 
         <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
-            <div class="container">
-                <a class="navbar-brand" href="index.html">Tu<span>Innovación</span></a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="oi oi-menu"></span> Menu
-                </button>
+        <div class="container">
+            <a class="navbar-brand" href="index.html"><span><spring:message code="app.title" /></span></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="oi oi-menu"></span> Menu
+            </button>
 
-                <div class="collapse navbar-collapse" id="ftco-nav">
-                    <ul class="navbar-nav ml-auto">
-                        <li class="nav-item active"><a href="index.html" class="nav-link">Inicio</a></li>
-                        <li class="nav-item"><a href="about.html" class="nav-link">Quienes somos</a></li>
-                        <li class="nav-item"><a href="editUsers.jsp" class="nav-link">Inscribete</a></li>
-                        <li class="nav-item"><a href="contact.html" class="nav-link">Contactanos</a></li>
-                    </ul>
-                </div>
+            <div class="collapse navbar-collapse" id="ftco-nav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active"><a href="index.html" class="nav-link"><spring:message code="app.nav.home" /></a></li>
+                    <li class="nav-item"><a href="about.html" class="nav-link"><spring:message code="app.nav.about" /></a></li>
+                    <li class="nav-item"><a href="editUsers.jsp" class="nav-link"><spring:message code="app.nav.join" /></a></li>
+                    <li class="nav-item"><a href="contact.html" class="nav-link"><spring:message code="app.nav.contact" /></a></li>
+                    <li class="nav-item"><a href="?lang=en" class="nav-link"><spring:message code="app.lang.english" /></a></li>
+                    <li class="nav-item"><a href="?lang=es" class="nav-link"><spring:message code="app.lang.spanish" /></a></li>
+                </ul>
             </div>
-        </nav>
+        </div>
+    </nav>
+    <!-- END nav -->
         <section class="hero-wrap hero-wrap-2 js-fullheight" style=" background-image: url('<c:url value='/static/images/bg_2.jpg' />');" data-stellar-background-ratio="0.1">
 
             <div class="overlay"></div>
