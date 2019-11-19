@@ -1,10 +1,12 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1" pageEncoding="ISO-8859-1"%>
 <%@ page isELIgnored="false" %>
+<%@ taglib uri="http://www.springframework.org/tags" prefix="spring"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+<spring:message code=""/>
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-        <title>Tu Innovacion</title>
+        <title><spring:message code="app.title" /></title>
         <link href="<c:url value='/static/css/bootstrap.css' />"  rel="stylesheet"></link>
         <link href="<c:url value='/static/css/app.css' />" rel="stylesheet"></link>
         <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.2.0/css/font-awesome.css" />
@@ -33,17 +35,19 @@
 
     <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
         <div class="container">
-            <a class="navbar-brand" href="index.html">Tu<span>Innovación</span></a>
+            <a class="navbar-brand" href="index.html"><span><spring:message code="app.title" /></span></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="oi oi-menu"></span> Menu
             </button>
 
             <div class="collapse navbar-collapse" id="ftco-nav">
                 <ul class="navbar-nav ml-auto">
-                    <li class="nav-item active"><a href="index.html" class="nav-link">Inicio</a></li>
-                    <li class="nav-item"><a href="about.html" class="nav-link">Quienes somos</a></li>
-                    <li class="nav-item"><a href="editUsers.jsp" class="nav-link">Inscribete</a></li>
-                    <li class="nav-item"><a href="contact.html" class="nav-link">Contactanos</a></li>
+                    <li class="nav-item active"><a href="index.html" class="nav-link"><spring:message code="app.nav.home" /></a></li>
+                    <li class="nav-item"><a href="about.html" class="nav-link"><spring:message code="app.nav.about" /></a></li>
+                    <li class="nav-item"><a href="editUsers.jsp" class="nav-link"><spring:message code="app.nav.join" /></a></li>
+                    <li class="nav-item"><a href="contact.html" class="nav-link"><spring:message code="app.nav.contact" /></a></li>
+                    <li class="nav-item"><a href="?lang=en" class="nav-link"><spring:message code="app.lang.english" /></a></li>
+                    <li class="nav-item"><a href="?lang=es" class="nav-link"><spring:message code="app.lang.spanish" /></a></li>
                 </ul>
             </div>
         </div>
@@ -56,8 +60,8 @@
             <div class="row no-gutters slider-text justify-content-start align-items-center">
                 <div class="col-lg-6 col-md-6 ftco-animate d-flex align-items-end">
                     <div class="text">
-                        <h1 class="mb-4">Terrenos <span>Para generar energia limpia</span> <span>¡Empieza ya!</span></h1>
-                        <p style="font-size: 18px;">Tu innovacion es un proyecto para aquellas personas que quieren ayudar al mundo y a su vez no estan beneficiadas con la electricidad</p>
+                        <h1 class="mb-4"><spring:message code="app.title1" /><span><spring:message code="app.title2" /></span> <span><spring:message code="app.title3"/></span></h1>
+                        <p style="font-size: 18px;"><spring:message code="app.title4" /></p>
                     </div>
                 </div>
                 <div class="col-lg-2 col"></div>
@@ -74,13 +78,13 @@
                                 <p>Has cerrado sesion correctamente.</p>
                             </div>
                         </c:if>
-                        <h2>Inicia sesionn</h2>
+                        <h2><spring:message code="app.inicia" /></h2>
                         <div class="form-group">
-                            <label for="" class="label">Usuario</label>
+                            <label for="" class="label"><spring:message code="app.usuario" /></label>
                             <input type="text" class="form-control" id="username" name="ssoId" placeholder="Nombre de Usuario" required>
                         </div>
                         <div class="form-group">
-                            <label for="" class="label">Contraseña</label>
+                            <label for="" class="label"><spring:message code="app.contraseña" /></label>
                             <input type="password" class="form-control" id="password" name="password" placeholder="Enter Password" required>
                         </div>
                         <div class="input-group input-sm">
